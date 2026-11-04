@@ -1,0 +1,110 @@
+/* Ars Backup. Look is set by the variables below, so a theme can restyle it without touching the code. */
+
+.ars-backup-modal,
+.ars-backup-settings {
+	--ars-backup-gap: var(--size-4-3, 12px);
+	--ars-backup-radius: var(--radius-m, 8px);
+	--ars-backup-touch: 44px;
+	--ars-backup-mono: var(--font-monospace, ui-monospace, monospace);
+	--ars-backup-key-size: 1.05em;
+	--ars-backup-surface: var(--background-secondary);
+	--ars-backup-error: var(--text-error);
+	--ars-backup-ok: var(--text-success, var(--color-green));
+	--ars-backup-warning: var(--text-warning, var(--color-orange));
+}
+
+.ars-backup-modal p {
+	margin: 0 0 var(--ars-backup-gap);
+	line-height: 1.5;
+}
+
+.ars-backup-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: var(--ars-backup-gap);
+	margin-top: var(--ars-backup-gap);
+}
+
+.ars-backup-buttons button {
+	min-height: var(--ars-backup-touch);
+	padding-inline: 1.2em;
+}
+
+.ars-backup-key {
+	font-family: var(--ars-backup-mono);
+	font-size: var(--ars-backup-key-size);
+	letter-spacing: 0.06em;
+	line-height: 1.7;
+	white-space: pre-wrap;
+	word-break: break-all;
+	user-select: all;
+	-webkit-user-select: all;
+	padding: var(--ars-backup-gap);
+	border-radius: var(--ars-backup-radius);
+	background: var(--ars-backup-surface);
+}
+
+.ars-backup-key-input {
+	width: 100%;
+	min-height: 6em;
+	font-family: var(--ars-backup-mono);
+	font-size: var(--ars-backup-key-size);
+	padding: var(--ars-backup-gap);
+	border-radius: var(--ars-backup-radius);
+	resize: vertical;
+}
+
+.ars-backup-message {
+	min-height: 1.5em;
+	margin-top: var(--ars-backup-gap);
+	color: var(--text-muted);
+}
+
+.ars-backup-message.is-error,
+.ars-backup-modal .ars-backup-message.is-error {
+	color: var(--ars-backup-error);
+}
+
+.ars-backup-message.is-ok,
+.ars-backup-modal .ars-backup-ok {
+	color: var(--ars-backup-ok);
+}
+
+.ars-backup-modal .ars-backup-warning {
+	color: var(--ars-backup-warning);
+}
+
+.ars-backup-choice {
+	padding: var(--ars-backup-gap);
+	margin-bottom: var(--ars-backup-gap);
+	border-radius: var(--ars-backup-radius);
+	background: var(--ars-backup-surface);
+}
+
+.ars-backup-choice p {
+	margin: 0;
+}
+
+.ars-backup-files {
+	margin: 0 0 var(--ars-backup-gap);
+	padding-left: 1.2em;
+	font-family: var(--ars-backup-mono);
+	word-break: break-all;
+}
+
+.ars-backup-report p {
+	margin: 0 0 0.4em;
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+/* Kept in the layout but invisible: some iOS versions ignore clicks on display:none file inputs. */
+.ars-backup-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	overflow: hidden;
+	pointer-events: none;
+}

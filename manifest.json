@@ -1,0 +1,10 @@
+{
+	"id": "ars-backup",
+	"name": "Ars Backup",
+	"version": "0.1.0",
+	"minAppVersion": "1.5.7",
+	"description": "Encrypted vault archives (age + zip) sent to your mailbox on a schedule, with a restore command.",
+	"author": "Senchous",
+	"authorUrl": "https://noeasy.xyz",
+	"isDesktopOnly": false
+}
