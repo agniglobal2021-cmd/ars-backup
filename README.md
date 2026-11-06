@@ -53,4 +53,6 @@ npm test        # логика плагина на хранилище в пам�
 npm run build   # main.js для релиза
 ```
 
+Релиз выпускается кнопкой: **Actions** → **Выпустить релиз** → **Run workflow**. GitHub соберёт плагин из исходников, прогонит тесты, в том числе с официальной программой age, и выпустит версию из `manifest.json`. Перед новым релизом подними версию в `manifest.json`, `package.json` и `versions.json` и допиши раздел в `CHANGELOG.md`.
+
 Лицензия MIT. Шифрование — [typage](https://github.com/FiloSottile/typage) (BSD-3-Clause), архивы — [fflate](https://github.com/101arrowz/fflate) (MIT).
